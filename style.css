@@ -81,10 +81,34 @@ button {
 
 .formulario {
     position: fixed;
-    top: 40px;
+    top: 25px;
     width: 600px;
     height: 100%;
     z-index: 3;
     left: -50%;
-    transition: 1.5s;
+    transition: 1.2s;
 }
+
+.link {
+   text-decoration: none;
+   color: black;
+}
+
+    @media screen and (max-width: 500px) {
+        .formulario {
+            left: -245%;
+            top: 64px;
+            width: 349px;
+        }
+
+        button {
+            padding: 0;
+            height: 41px;
+            margin-right: 16px;
+        }
+
+        .texto-rodape {
+            margin-top: 14px;
+            margin-bottom: 7px;
+        }
+    }
